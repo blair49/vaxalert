@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vax Alert</string>
+    <string name="startSearching">Start Searching</string>
+    <string name="stopSearching">Stop Searching</string>
+    <string name="modifySearch">Modify Search Criteria</string>
+    <string name="tvDose1">Dose 1: %1$d</string>
+    <string name="tvDose2">Dose 2: %1$d</string>
+    <string name="searchByPin">PIN</string>
+    <string name="searchByDistrict">District</string>
+    <string name="foundSessions">Found %1$d sessions</string>
+</resources>

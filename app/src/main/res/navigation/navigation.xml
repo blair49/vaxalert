@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/createAlertFragment">
+    <fragment
+        android:id="@+id/createAlertFragment"
+        android:name="com.blairfernandes.vaxalert.CreateAlertFragment"
+        android:label="CreateAlertFragment" >
+        <action
+            android:id="@+id/action_createAlertFragment_to_resultsFragment"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.blairfernandes.vaxalert.ResultsFragment"
+        android:label="fragment_results"
+        tools:layout="@layout/fragment_results" >
+        <argument
+            android:name="session_details"
+            app:argType="com.blairfernandes.vaxalert.model.SessionDetails[]" />
+        <action
+            android:id="@+id/action_resultsFragment_to_createAlertFragment"
+            app:destination="@id/createAlertFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/resultsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
